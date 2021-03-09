@@ -2,12 +2,9 @@ alioss-upload extension  for laravel-admin
 ======
 扩展laravel-admin的表单，实现web直传阿里OSS
 
-## 截图
-![](https://github.com/airan587/laravel-admin-aliossUpload/blob/master/1.png?raw=true)
-
 ## 安装
 ```
-composer require airan/alioss-upload
+composer require de-memory/alioss-upload
 php artisan vendor:publish --provider=Encore\AliOssUpload\AliOssUploadServiceProvider
 ```
 ## 配置
@@ -30,4 +27,8 @@ php artisan vendor:publish --provider=Encore\AliOssUpload\AliOssUploadServicePro
 $form->aliOss('pic', '图片')->attribute('file');  // 单图（默认）
 $form->aliOss('pic2', '图片2')->attribute('images'); // 多图
 ```
+
+## 说明
+不知道什么情况原先的airan/alioss-upload无法使用，为了方便自己发布了一个alioss-upload。
+如果侵权请私密我，或者联系我QQ：972985083
 
